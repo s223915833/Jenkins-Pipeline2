@@ -80,7 +80,7 @@ pipeline {
         stage('Deploy to Production') {
             steps {
                 echo "Deploying to Production server, AWS EC2 instance"
-                echo "Deployed to Production successfully. Server - AWS EC2 instance"
+                echo "Deployed to Production successfully. Server - AWS EC2 instance Test"
             }
         }
     }

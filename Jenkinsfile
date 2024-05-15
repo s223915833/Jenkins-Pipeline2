@@ -22,7 +22,7 @@ pipeline {
             post {
                 success {
                     emailext( 
-                        to: "ns.kehelpannala@gmail.com",
+                        to: 'ns.kehelpannala@gmail.com',
                         subject: "Unit and Integration Test Succeeded",
                         body: "Unit and Integration Test succeeded! Please refer attached logs for more details.",
                         attachLog: true)

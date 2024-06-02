@@ -21,18 +21,16 @@ pipeline {
             }
             post {
                 success {
-                    emailext( 
-                        to: 'ns.kehelpannala@gmail.com',
+                    emailext to: 'ns.kehelpannala@gmail.com',
                         subject: "Unit and Integration Test Succeeded",
                         body: "Unit and Integration Test succeeded! Please refer attached logs for more details.",
-                        attachLog: true)
+                        attachLog: true
                 }
                 failure {
-                    emailext (
-                        to: "ns.kehelpannala@gmail.com",
+                    emailext to: "ns.kehelpannala@gmail.com",
                         subject: "Unit and Integration Test Failed",
                         body: "Unit and Integration Test Failed! Please refer attached logs for more details.",
-                        attachLog: true)
+                        attachLog: true
                 }
             }
         }
@@ -51,18 +49,16 @@ pipeline {
             }
             post {
                 success {
-                    emailext (
-                        to: "ns.kehelpannala@gmail.com",
+                    emailext to: "ns.kehelpannala@gmail.com",
                         subject: "Security Scan Succeeded",
                         body: "Security Scan succeeded! Please refer attached logs for more details.",
-                        attachLog: true)
+                        attachLog: true
                 }
                 failure {
-                    emailext (
-                        to: "ns.kehelpannala@gmail.com",
+                    emailext to: "ns.kehelpannala@gmail.com",
                         subject: "Security Scan Failed",
                         body: "Security Scan Failed! Please refer attached logs for more details.",
-                        attachLog: true)
+                        attachLog: true
                 }
             }
         }

@@ -73,7 +73,7 @@ pipeline {
         stage('Integration Tests on Staging') {
             steps {
                 echo "Integration tests started with Cypress"
-                echo "Integration tests completed successfully"
+                echo "Integration tests completed successfully !!"
             }
         }
 
